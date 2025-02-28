@@ -11,42 +11,42 @@
   <div class="container">
 
     <div class="panel" id="panel1" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
+      <img width="400" src="immagini/immagine1.jpeg" alt="immagine 1">
       <p>testo 1</p>
     </div>
     <div class="panel" id="panel2" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 2">
+      <img width="400" src="immagini/immagine2.jpeg" alt="immagine 2">
       <p>testo 2</p>
     </div>
     <div class="panel" id="panel3">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 3">
+      <img width="400" src="immagini/immagine3.jpeg" alt="immagine 3">
       <p>testo 3</p>
     </div>
     <div class="panel" id="panel4" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 4">
+      <img width="400" src="immagini/immagine4.png" alt="immagine 4">
       <p>testo 4</p>
     </div>
     <div class="panel" id="panel5" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 5">
+      <img width="400" src="immagini/immagine5.png" alt="immagine 5">
       <p>testo 5</p>
     </div>
-    <div class="panel" id="panel1" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
+    <div class="panel" id="panel6" style="display: none;">
+      <img width="400" src="immagini/immagine6.jpeg" alt="immagine 1">
       <p>testo 6</p>
     </div>
-    <div class="panel" id="panel1" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
+    <div class="panel" id="panel7" style="display: none;">
+      <img width="400" src="immagini/immagine7.png" alt="immagine 1">
       <p>testo 7</p>
     </div>
-    <div class="panel" id="panel1" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
+    <div class="panel" id="panel8" style="display: none;">
+      <img width="400" src="immagini/immagine8.png" alt="immagine 1">
       <p>testo 8</p>
     </div>
-    <div class="panel" id="panel1" style="display: none;">
+    <div class="panel" id="panel9" style="display: none;">
       <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
       <p>testo 9</p>
     </div>
-    <div class="panel" id="panel1" style="display: none;">
+    <div class="panel" id="panel10" style="display: none;">
       <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
       <p>testo 10</p>
     </div>
@@ -55,6 +55,23 @@
       <button onclick="Prev()">Prev</button>
       <button onclick="Next()">Next</button>
     </div>
+    <script>
+      let currentPanel = 1;
+      function Prev() {
+        if (currentPanel > 1) {
+          document.getElementById('panel' + currentPanel).style.display = 'none';
+          currentPanel--;
+          document.getElementById('panel' + currentPanel).style.display = 'block';
+        }
+      }
+      function Next() {
+        if (currentPanel < 10) {
+          document.getElementById('panel' + currentPanel).style.display = 'none';
+          currentPanel++;
+          document.getElementById('panel' + currentPanel).style.display = 'block';
+        }
+      }
+    </script>
 </body>
 
 </html>
