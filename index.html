@@ -10,15 +10,15 @@
 <body>
   <div class="container">
 
-    <div class="panel" id="panel1" style="display: none;">
+    <div class="panel" id="panel1">
       <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
       <p>testo per la pagina 1</p>
     </div>
     <div class="panel" id="panel2" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 2">
+      <img width="400" src="immagini/Screenshot 2025-02-28 112448.png" alt="immagine 2">
       <p>testo 2</p>
     </div>
-    <div class="panel" id="panel3">
+    <div class="panel" id="panel3" style="display: none;">
       <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 3">
       <p>testo 3</p>
     </div>
@@ -28,6 +28,25 @@
     <button onclick="Prev()">Prev</button>
     <button onclick="Next()">Next</button>
   </div>
+
+  <script>
+    let currentPanel = 1;
+    function Prev() {
+      if (currentPanel !== 1) {
+        document.getElementById("panel" + currentPanel).style.display = "none";
+        currentPanel -= 1;
+        document.getElementById("panel" + currentPanel).style.display = "block";
+      }
+
+    }
+    function Next() {
+      if (currentPanel !== 3) {
+        document.getElementById("panel" + currentPanel).style.display = "none";
+        currentPanel += 1;
+        document.getElementById("panel" + currentPanel).style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 </html>
