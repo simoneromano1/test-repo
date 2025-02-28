@@ -1,13 +1,32 @@
 [
   {
-    "testo1": "qui mettete il testo della prima pagina"
+    "testo1": "inserire i 4 pezzi rotondi neri indicati nella prima immagine ai lati del parallelepipedo"
   },
   {
-    "testo2": "qui mettete il testo della seconda pagina"
+    "testo2": "inserire il pezzo a forma di triangolo rosso nella parte frontale del parallelepipedo e il pezzo piatto rosso lungo 3 pezzi nella parte superiore"
   },
   {
-    "testo3": "qui mettete il testo della terza pagina"
+    "testo3": "impilare 2 pezzi rotondi neri nel primo spazio vuoto sopra il pezzo rosso"
+  },
+  {
+    "testo4": "impilare il blocco trasparente quadrato e il quadrato piatto nell'ultimo spazio vuoto"
+  },
+  {
+    "testo5": "prendere un pezzo marrone a forma di cilindro e posizionarlo al centro del pezzo rosso a forma di cerchio successivamente inserire 4 pezzi rotondi di colore diverso e posizionarli nel primo spazio vuoto sotto a 4 pezzi trapezioidali verdi e infine posizionare i 4 trapezzi verdi assemblati sopra al blocco marrone ognuno ruotato di 90 gradi rispetto al precedente"
+  },
+  {
+    "testo6": "posizionare un blocco quadrato verde sopra i 4 trapezi verdi e successivamente ripetere l'operazione precedente e posizionarli ognuno a 90 gradi al contrario rispetto al passaggio precedente"
+  },
+  {
+    "testo7": "posizionare un blocco quadrato verde sopra i 4 trapezi verdi e successivamente ripetere il procedimento n.5 ma con dei trapezi più piccoli"
+  },
+  {
+    "testo8": "posizionare un blocco quadrato verde sopra i 4 trapezi verdi e ripetere il procedimento n.6 con i trapezi piccoli"
+  },
+  {
+    "testo9": "posizionare l'ultimo quadrato verde sopra i 4 trapezi verdi e poi impiare un pezzo rotondo verde, un quadrato verde e un cono con una stella"
+  },
+  {
+    "testo10": "assemblare dei pacchetti regalo come nell'immagine"
   }
-  
-  
 ]
