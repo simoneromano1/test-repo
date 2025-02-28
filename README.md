@@ -1,3 +1,10 @@
-# test-repo
-test dei comandi git
-ce l'abbiamo fatta!
+textImg1:
+textImg2:
+textImg3:
+textImg4:
+textImg5:
+textImg6:
+textImg7:
+textImg8:
+textImg9:
+textImg10:
