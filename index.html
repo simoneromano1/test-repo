@@ -5,12 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libretto istruzioni</title>
+  <style>
+    #container {
+      height: 72vh;
+      background-color: blue;
+    }
+
+    #buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      opacity: 80%;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="panel" id="panel1"">
+  <div id="container" class="container" sty>
+
+    <div class="panel" id="panel1">
       <img width=" 400" src="immagini/immagine1.jpeg" alt="immagine 1">
       <p>testo 1</p>
     </div>
@@ -42,36 +64,28 @@
       <img width="400" src="immagini/immagine8.png" alt="immagine 1">
       <p>testo 8</p>
     </div>
-    <div class="panel" id="panel9" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
-      <p>testo 9</p>
-    </div>
-    <div class="panel" id="panel10" style="display: none;">
-      <img width="400" src="immagini/Screenshot 2025-02-28 112425.png" alt="immagine 1">
-      <p>testo 10</p>
-    </div>
-
-    <div>
-      <button onclick="Prev()">Prev</button>
-      <button onclick="Next()">Next</button>
-    </div>
-    <script>
-      let currentPanel = 1;
-      function Prev() {
-        if (currentPanel > 1) {
-          document.getElementById('panel' + currentPanel).style.display = 'none';
-          currentPanel--;
-          document.getElementById('panel' + currentPanel).style.display = 'block';
-        }
+  </div>
+  <div id="buttons">
+    <button onclick="Prev()">Prev</button>
+    <button onclick="Next()">Next</button>
+  </div>
+  <script>
+    let currentPanel = 1;
+    function Prev() {
+      if (currentPanel > 1) {
+        document.getElementById('panel' + currentPanel).style.display = 'none';
+        currentPanel--;
+        document.getElementById('panel' + currentPanel).style.display = 'block';
       }
-      function Next() {
-        if (currentPanel < 10) {
-          document.getElementById('panel' + currentPanel).style.display = 'none';
-          currentPanel++;
-          document.getElementById('panel' + currentPanel).style.display = 'block';
-        }
+    }
+    function Next() {
+      if (currentPanel < 8) {
+        document.getElementById('panel' + currentPanel).style.display = 'none';
+        currentPanel++;
+        document.getElementById('panel' + currentPanel).style.display = 'block';
       }
-    </script>
+    }
+  </script>
 </body>
 
 </html>
