@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libretto istruzioni</title>
+  <style>
+    #container {
+      height: 72vh;
+      background-color: blue;
+      border: 5px solid white;
+      border-radius: 50px;
+      margin: 5px;
+    }
+
+    #buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      opacity: 80%;
+    }
+
+    .image {
+      border-radius: 50%;
+      background-image: url("immagini/immagine1.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    #panel1>.image {
+      background-image: url("immagini/immagine1.jpeg");
+    }
+
+    #panel2>.image {
+      background-image: url("immagini/immagine2.jpeg");
+    }
+
+    #panel3>.image {
+      background-image: url("immagini/immagine3.jpeg");
+    }
+
+    #panel4>.image {
+      background-image: url("immagini/immagine4.png");
+    }
+
+    #panel5>.image {
+      background-image: url("immagini/immagine5.png");
+    }
+
+    #panel6>.image {
+      background-image: url("immagini/immagine6.jpeg");
+    }
+
+    #panel7>.image {
+      background-image: url("immagini/immagine7.png");
+    }
+
+    #panel8>.image {
+      background-image: url("immagini/immagine8.png");
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="container" class="container" sty>
+
+    <div class="panel" id="panel1">
+      <div class="image"></div>
+      <p>testo 1</p>
+    </div>
+    <div class="panel" id="panel2" style="display: none;">
+      <div class="image"></div>
+      <p>testo 2</p>
+    </div>
+    <div class="panel" id="panel3" style="display: none;"">
+      <div class=" image"></div>
+    <p>testo 3</p>
+  </div>
+  <div class="panel" id="panel4" style="display: none;">
+    <div class="image"></div>
+    <p>testo 4</p>
+  </div>
+  <div class="panel" id="panel5" style="display: none;">
+    <div class="image"></div>
+    <p>testo 5</p>
+  </div>
+  <div class="panel" id="panel6" style="display: none;">
+    <div class="image"></div>
+    <p>testo 6</p>
+  </div>
+  <div class="panel" id="panel7" style="display: none;">
+    <div class="image"></div>
+    <p>testo 7</p>
+  </div>
+  <div class="panel" id="panel8" style="display: none;">
+    <p>testo 8</p>
+  </div>
+  </div>
+  <div id="buttons">
+    <button onclick="Prev()">Prev</button>
+    <button onclick="Next()">Next</button>
+  </div>
+  <script>
+    let currentPanel = 1;
+    function Prev() {
+      if (currentPanel > 1) {
+        document.getElementById('panel' + currentPanel).style.display = 'none';
+        currentPanel--;
+        document.getElementById('panel' + currentPanel).style.display = 'flex';
+      }
+    }
+    function Next() {
+      if (currentPanel < 8) {
+        document.getElementById('panel' + currentPanel).style.display = 'none';
+        currentPanel++;
+        document.getElementById('panel' + currentPanel).style.display = 'flex';
+      }
+    }
+  </script>
+</body>
+
+</html>
