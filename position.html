@@ -2,17 +2,24 @@
 
 <head>
   <style>
+    .sibling-element {
+      background: #f2f2f2;
+      padding: 10px;
+      border: 1px solid #81adc8;
+    }
+
     .main-element {
-      position: static;
-      left: 100px;
-      bottom: 100px;
+      position: sticky;
+      top: 10px;
       background-color: yellow;
       padding: 10px;
     }
 
-    .sibling-element {
-      padding: 10px;
-      background-color: #f2f2f2;
+    .parent-element {
+      position: relative;
+      height: 800px;
+      padding: 50px 10px;
+      background-color: #81adc8;
     }
   </style>
 </head>
