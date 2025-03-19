@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libretto istruzioni</title>
+<style>
+    #container {
+        height: 72vh;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .panel {
+        text-align: center;
+    }
+
+    .panel img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #buttons {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #buttons button {
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div id="container" class="container" sty>
+
+        <div class="panel" id="panel1">
+            <img width=" 400" src="immagini/immagine1.jpeg" alt="immagine 1">
+            <p>testo 1</p>
+        </div>
+        <div class="panel" id="panel2" style="display: none;">
+            <img width="400" src="immagini/immagine2.jpeg" alt="immagine 2">
+            <p>testo 2</p>
+        </div>
+        <div class="panel" id="panel3" style="display: none;"">
+      <img width=" 400" src="immagini/immagine3.jpeg" alt="immagine 3">
+            <p>testo3</p>
+        </div>
+        <div class="panel" id="panel4" style="display: none;">
+            <img width="400" src="immagini/immagine4.png" alt="immagine 4">
+            <p>testo 4</p>
+        </div>
+        <div class="panel" id="panel5" style="display: none;">
+            <img width="400" src="immagini/immagine5.png" alt="immagine 5">
+            <p>testo 5</p>
+        </div>
+        <div class="panel" id="panel6" style="display: none;">
+            <img width="400" src="immagini/immagine6.jpeg" alt="immagine 1">
+            <p>testo 6</p>
+        </div>
+        <div class="panel" id="panel7" style="display: none;">
+            <img width="400" src="immagini/immagine7.png" alt="immagine 1">
+            <p>testo 7</p>
+        </div>
+        <div class="panel" id="panel8" style="display: none;">
+            <img width="400" src="immagini/immagine8.png" alt="immagine 1">
+            <p>testo 8</p>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <button onclick="Prev()">Prev</button>
+        <button onclick="Next()">Next</button>
+    </div>
+
+    <script>
+        let currentPanel = 1;
+        function Prev() {
+            if (currentPanel > 1) {
+                document.getElementById('panel' + currentPanel).style.display = 'none';
+                currentPanel--;
+                document.getElementById('panel' + currentPanel).style.display = 'block';
+            }
+        }
+        function Next() {
+            if (currentPanel < 8) {
+                document.getElementById('panel' + currentPanel).style.display = 'none';
+                currentPanel++;
+                document.getElementById('panel' + currentPanel).style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
