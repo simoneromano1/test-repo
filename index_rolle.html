@@ -10,6 +10,9 @@
       height: 72vh;
       background-color: blue;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .panel {
@@ -19,6 +22,11 @@
       justify-content: center;
       height: 100%;
       opacity: 80%;
+    }
+
+    .panel img {
+      display: block;
+      margin: 0 auto;
     }
 
     .nav-button {
@@ -43,7 +51,7 @@
 <body>
   <div id="container">
     <div class="panel" id="panel1">
-      <img width="400" src="immagini/immagine1.jpeg" alt="immagine 1">
+      <img width="330" src="immagini/immagine1.jpeg" alt="immagine 1">
       <p>testo 1</p>
     </div>
     <div class="panel" id="panel2" style="display: none;">
@@ -51,7 +59,7 @@
       <p>testo 2</p>
     </div>
     <div class="panel" id="panel3" style="display: none;">
-      <img width="400" src="immagini/immagine3.jpeg" alt="immagine 3">
+      <img width="300" src="immagini/immagine3.jpeg" alt="immagine 3">
       <p>testo 3</p>
     </div>
     <div class="panel" id="panel4" style="display: none;">
@@ -63,7 +71,7 @@
       <p>testo 5</p>
     </div>
     <div class="panel" id="panel6" style="display: none;">
-      <img width="400" src="immagini/immagine6.jpeg" alt="immagine 6">
+      <img width="300" src="immagini/immagine6.jpeg" alt="immagine 6">
       <p>testo 6</p>
     </div>
     <div class="panel" id="panel7" style="display: none;">
