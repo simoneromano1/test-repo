@@ -1,0 +1,69 @@
+<html>
+
+
+<head>
+    
+    <style>
+        body 
+        {
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container 
+        {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: whitesmoke;
+        }
+
+        .corner 
+        {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .top-left {
+            background-color: purple;
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            background-color: violet;
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            background-color: salmon;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            background-color: pink;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="corner top-left">Angolo 1</div>
+        <div class="corner top-right">Angolo 2</div>
+        <div class="corner bottom-left">Angolo 3</div>
+        <div class="corner bottom-right">Angolo 4</div>
+    </div>
+</body>
+
+</html>
