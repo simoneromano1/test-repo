@@ -5,32 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Libretto istruzioni</title>
-  <style>
-    #container {
-      height: 72vh;
-      background-color: blue;
-    }
-
-    #buttons {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-    }
-
-    .panel {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      opacity: 80%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">v
 </head>
 
 <body>
-
-  <div id="container" class="container" sty>
+ 
+  <div id="container" class="container">
 
     <div class="panel" id="panel1">
       <img width=" 400" src="immagini/immagine1.jpeg" alt="immagine 1">
@@ -69,20 +49,23 @@
     <button onclick="Prev()">Prev</button>
     <button onclick="Next()">Next</button>
   </div>
+
+
+
   <script>
     let currentPanel = 1;
     function Prev() {
       if (currentPanel > 1) {
         document.getElementById('panel' + currentPanel).style.display = 'none';
         currentPanel--;
-        document.getElementById('panel' + currentPanel).style.display = 'block';
+        document.getElementById('panel' + currentPanel).style.display = 'flex';
       }
     }
     function Next() {
       if (currentPanel < 8) {
         document.getElementById('panel' + currentPanel).style.display = 'none';
         currentPanel++;
-        document.getElementById('panel' + currentPanel).style.display = 'block';
+        document.getElementById('panel' + currentPanel).style.display = 'flex';
       }
     }
   </script>
