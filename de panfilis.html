@@ -1,77 +1,88 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cards</title>
     <style>
-        .main-element {
-            position: static;
-            left: 100px;
-            bottom: 100px;
-            background-color: yellow;
-            padding: 10px;
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #d6e4f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
 
-        .sibling-element {
-            padding: 10px;
-            background-color: #f2f2f2;
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
         }
 
-        .top-left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: pink;
-            padding: 40px;
-            color: white;
+        .card h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
         }
 
-        .top-right {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color: orangered;
-            padding: 40px;
-            color: white;
-        }
-
-        .bottom-left {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color: yellow;
-            padding: 40px;
-            color: white;
-        }
-
-        .bottom-right {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-color: green;
-            padding: 40px;
-            color: white;
+        .card p {
+            margin: 10px 0 0;
+            color: #666;
         }
     </style>
 </head>
-
 <body>
-
-    <div class="top-left">
-        Alto Sinistra
+    <div class="flex-container">
+        <div class="card">
+            <h2>Tommaso Brambillasca</h2>
+            <p>neopatentato dorme è il più grande.</p>
+        </div>
+        <div class="card">
+            <h2>Mattia Longo</h2>
+            <p>Gioca a Minecraft e fa musica.</p>
+        </div>
+        <div class="card">
+            <h2>Tommaso Belotti</h2>
+            <p>gli piacciono le bambine</p>
+        </div>
+        <div class="card">
+            <h2>Roberto Nica</h2>
+            <p>informatico simpatico e nuovo patentato</p>
+        </div>
     </div>
-
-    <div class="top-right">
-        Alto Destra
-    </div>
-
-    <div class="bottom-left">
-        Basso Sinistra
-    </div>
-
-    <div class="bottom-right">
-        Basso Destra
-    </div>
-
-    
-
 </body>
-<html>
+</html>
+<style>
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 15px;
+    }
+</style>
+<script>
+    const images = ['biondoino.jpg', 'ragazzopadel.jpg', 'canebaubau.jpg', 'robertonica.jpg'];
+    document.querySelectorAll('.card').forEach((card, index) => {
+        const img = document.createElement('img');
+        img.src = images[index] || 'https://via.placeholder.com/250x150?text=No+Image';
+        img.alt = `Image ${index + 1}`;
+        img.style.width = '100%';
+        img.style.height = '300px';
+        img.style.objectFit = 'cover';
+        card.insertBefore(img, card.firstChild);
+    });
+</script>
