@@ -1,4 +1,4 @@
-/* Reset e margini */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
   }
   
   body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: sans-serif;
     background-color: black;
     display: flex;
     justify-content: center;
