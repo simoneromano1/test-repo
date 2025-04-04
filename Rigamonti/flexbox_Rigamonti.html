@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Cards</title>
     <style>
         body {
-            font-family: 'Times New Roman', serif;
-            background-color: #d6e4f0;
+            font-family: 'Georgia', serif;
+            background-color: rgb(255, 255, 255);
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #f4daf0;
         }
 
         .flex-container {
@@ -23,8 +24,9 @@
             justify-content: center;
             gap: 20px;
         }
+
         .card {
-            background-color: #fff;
+            background-color: rgb(226, 166, 223);
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,26 +47,28 @@
         }
     </style>
 </head>
+
 <body>
     <div class="flex-container">
         <div class="card">
-            <h2>Tommaso Brambillasca</h2>
-            <p>neopatentato dorme è il più grande.</p>
-        </div>
-        <div class="card">
-            <h2>Mattia Longo</h2>
-            <p>Gioca a Minecraft e fa musica.</p>
+            <h2>Valerie Rigamonti</h2>
+            <p>Bergamo</p>
         </div>
         <div class="card">
             <h2>Tommaso Belotti</h2>
-            <p>gli piacciono le bambine</p>
+            <p>Bergamo</p>
         </div>
         <div class="card">
             <h2>Roberto Nica</h2>
-            <p>informatico simpatico e nuovo patentato</p>
+            <p>Bergamo</p>
+        </div>
+        <div class="card">
+            <h2>Mattia Longo</h2>
+            <p>Bergamo</p>
         </div>
     </div>
 </body>
+
 </html>
 <style>
     .card img {
@@ -75,11 +79,11 @@
     }
 </style>
 <script>
-    const images = ['biondoino.jpg', 'ragazzopadel.jpg', 'canebaubau.jpg', 'robertonica.jpg'];
+    const images = ['image.png', 'cielo.jpg', 'prato.jpg', 'casa.jpg'];
     document.querySelectorAll('.card').forEach((card, index) => {
         const img = document.createElement('img');
         img.src = images[index] || 'https://via.placeholder.com/250x150?text=No+Image';
-        img.alt = `Image ${index + 1}`;
+        img.alt = "Image ${ index + 1 }";
         img.style.width = '100%';
         img.style.height = '300px';
         img.style.objectFit = 'cover';
