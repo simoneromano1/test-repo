@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\studente\\test repo\\test-repo\\html\\html.csproj",
+      "projectUniqueName": "C:\\Users\\studente\\Desktop\\test-repo\\html\\html.csproj",
       "projectName": "html",
-      "projectPath": "C:\\Users\\studente\\test repo\\test-repo\\html\\html.csproj",
+      "projectPath": "C:\\Users\\studente\\Desktop\\test-repo\\html\\html.csproj",
       "packagesPath": "C:\\Users\\studente\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\studente\\test repo\\test-repo\\html\\obj\\",
+      "outputPath": "C:\\Users\\studente\\Desktop\\test-repo\\html\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
