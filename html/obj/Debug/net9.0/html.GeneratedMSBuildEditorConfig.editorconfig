@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = html
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\studente\Desktop\test-repo\html\
+=======
+build_property.ProjectDir = c:\Users\39349\test-repo\html\
+>>>>>>> 2a7f6301086797b980ec2e76b689e96cce3c5eaf
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0

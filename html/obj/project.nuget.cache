@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "rMWhWlB8Qe4=",
   "success": true,
   "projectFilePath": "C:\\Users\\studente\\Desktop\\test-repo\\html\\html.csproj",
+=======
+  "dgSpecHash": "Xy3seZxcAkM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\39349\\test-repo\\html\\html.csproj",
+>>>>>>> 2a7f6301086797b980ec2e76b689e96cce3c5eaf
   "expectedPackageFiles": [],
   "logs": []
 }
