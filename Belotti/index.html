@@ -1,14 +1,88 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expense Tracker</title>
+  <title>Flexbox Cards</title>
+  <style>
+    body {
+      font-family: 'Comic Sans', serif;
+      background-color: #4e8cc2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #155006;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ee8484;
+      border: 1px solid #0044ff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .card p {
+      margin: 10px 0 0;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
-
+  <div class="flex-container">
+    <div class="card">
+      <img src="/immagini/immagine1.jpeg" alt="Student Image">
+      <h2>Filippo Trainini</h2>
+      <p> Lodetto, Rovato</p>
+    </div>
+    <div class="card">
+      <img src="/immagini/immagine2.jpeg" alt="Student Image">
+      <h2>Mattia Longo</h2>
+      <p>producer e poppa la perc con mob</p>
+    </div>
+    <div class="card">
+      <img src="/immagini/immagine1.jpeg" alt="Student Image">
+      <h2>Tommaso Belotti</h2>
+      <p> creatore del Rozzano Calcio</p>
+    </div>
+    <div class="card">
+      <img src="/immagini/immagine1.jpeg" alt="Student Image">
+      <h2>Roberto Nica</h2>
+      <p>mangiatore di pasta al sensei e attaccante del Rozzano</p>
+    </div>
+  </div>
 </body>
 
 </html>
+<style>
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+  }
+</style>
+<script>
+
+
+</script>
