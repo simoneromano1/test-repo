@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calcolatrice</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fa95ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #display {
+            width: 200px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding: 5px;
+            text-align: right;
+        }
+
+        .tasti {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            gap: 5px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 20px;
+            background-color: #ffcefa;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="display" disabled>
+        <div class="tasti">
+            <button onclick="aggiungi('7')">7</button>
+            <button onclick="aggiungi('8')">8</button>
+            <button onclick="aggiungi('9')">9</button>
+            <button onclick="aggiungi('/')">/</button>
+
+            <button onclick="aggiungi('4')">4</button>
+            <button onclick="aggiungi('5')">5</button>
+            <button onclick="aggiungi('6')">6</button>
+            <button onclick="aggiungi('*')">*</button>
+
+            <button onclick="aggiungi('1')">1</button>
+            <button onclick="aggiungi('2')">2</button>
+            <button onclick="aggiungi('3')">3</button>
+            <button onclick="aggiungi('-')">-</button>
+
+            <button onclick="aggiungi('0')">0</button>
+            <button onclick="aggiungi('.')">.</button>
+            <button onclick="calcola()">=</button>
+            <button onclick="aggiungi('+')">+</button>
+
+            <button onclick="pulisci()" style="grid-column: span 4;">AC</button>
+        </div>
+    </div>
+
+    <script>
+        const display = document.getElementById('display');
+
+        function aggiungi(val) {
+            display.value += val;
+        }
+
+        function calcola() {
+            try {
+                display.value = eval(display.value);
+            } catch {
+                display.value = 'Errore';
+            }
+        }
+
+        function pulisci() {
+            display.value = '';
+        }
+    </script>
+</body>
+
+</html>
