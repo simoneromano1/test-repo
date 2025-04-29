@@ -140,13 +140,3 @@ dot.addEventListener("click", () => {
     }
 });
 
-let orario = document.getElementById("orario");
-
-setInterval(() => {
-    orario.innerHTML = new Date().toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false // 👉 formato 24 ore
-    });
-}, 1000);
-

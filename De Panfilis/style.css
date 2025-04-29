@@ -49,103 +49,103 @@ h1{
 }
 
 #clear{
-    background-color: #a7a7a7;
+    background-color: purple;
     color: #000000;
     font-weight: bold;
 }
 
 #backspace{
-    background-color: #a7a7a7;
+    background-color: purple;
     color: #000000;
     font-weight: bold;
 }
 
 #one{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #two{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #three{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #four{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #five{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #six{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #seven{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #eight{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #nine{
-    background-color: #464646;
+    background-color: blue;
     color: #ffffff;
     font-weight: bold;
 }
 
 #zero{
-    background-color: #464646;
+    background-color:  green;
     color: #ffffff;
     font-weight: bold;
 }
 
 #add{
-    background-color: #ffa500;
+    background-color:  green;
     color: #ffffff;
     font-weight: bold;
 }
 
 #subtract{
-    background-color: #ffa500;
+    background-color:  green;
     color: #ffffff;
     font-weight: bold; 
 }
 
 #multiply{
-    background-color: #ffa500;
+    background-color:  green;
     color: #ffffff;
     font-weight: bold; 
 }
 
 #divide{
-    background-color: #ffa500;
+    background-color:  green;
     color: #ffffff;
     font-weight: bold; 
 }
 
 #equals{
-    background-color: #ffa500;
+    background-color: green;
     color: #ffffff;
     font-weight: bold; 
 }
